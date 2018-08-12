@@ -19,7 +19,7 @@ abstract class Nurbs_Surface_Abstract
 	 */
 	public function addPoints (array $points)
 	{
-		$this->_points = $this->_points + $points;
+		$this->_points = array_merge($this->_points, $points);
 	}
 	
 	/**
